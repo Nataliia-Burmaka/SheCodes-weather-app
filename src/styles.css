@@ -102,3 +102,8 @@ hr {
 .day-container .temp {
   font-size: 24px;
 }
+.myGit {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
