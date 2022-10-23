@@ -4,8 +4,7 @@ body {
 
 .bg-image {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/033/original/dominik-schroder-FIKD9t5_5zQ-unsplash.jpg?1662923282");
-  background-color: #cccccc;
-  height: 100vh;
+  background-color: #b0b2cf;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -60,7 +59,7 @@ body {
 }
 
 .row {
-  padding: 20px;
+  padding: 10px;
   margin: 0 auto;
 }
 
@@ -77,9 +76,33 @@ body {
   font-size: 60px;
 }
 
+.units .active {
+  color: black;
+  text-decoration: none;
+}
+
+.fahrenheit-link,
+.celsius-link {
+  color: #1687a7;
+  cursor: default;
+}
+
+.units {
+  position: relative;
+  font-size: medium;
+  top: -20px;
+}
+
+.icon {
+  margin-left: 15px;
+  background: none;
+  border: none;
+  top: -15px;
+}
+
 .humidity,
 .day-time {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .wind,
