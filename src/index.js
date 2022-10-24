@@ -81,6 +81,50 @@ function displayCelsiusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
+function showKyiv(event) {
+  event.preventDefault();
+  let currentCity = document.querySelector("#currentCity");
+  currentCity.innerHTML = "Kyiv";
+  let apiKey = "1a6432c5ca7b6f9b0bee45c98d54ea71";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Kyiv&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayWeatherCondition);
+}
+let kyiv = document.querySelector("#kyiv");
+kyiv.addEventListener("click", showKyiv);
+
+function showParis(event) {
+  event.preventDefault();
+  let currentCity = document.querySelector("#currentCity");
+  currentCity.innerHTML = "Paris";
+  let apiKey = "1a6432c5ca7b6f9b0bee45c98d54ea71";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayWeatherCondition);
+}
+let paris = document.querySelector("#paris");
+paris.addEventListener("click", showParis);
+
+function showHelsinki(event) {
+  event.preventDefault();
+  let currentCity = document.querySelector("#currentCity");
+  currentCity.innerHTML = "Helsinki";
+  let apiKey = "1a6432c5ca7b6f9b0bee45c98d54ea71";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Helsinki&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayWeatherCondition);
+}
+let helsinki = document.querySelector("#helsinki");
+helsinki.addEventListener("click", showHelsinki);
+
+function showHurghada(event) {
+  event.preventDefault();
+  let currentCity = document.querySelector("#currentCity");
+  currentCity.innerHTML = "Hurghada";
+  let apiKey = "1a6432c5ca7b6f9b0bee45c98d54ea71";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Hurghada&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayWeatherCondition);
+}
+let hurghada = document.querySelector("#hurghada");
+hurghada.addEventListener("click", showHurghada);
+
 let celsiusTemperature = null;
 
 let dateElement = document.querySelector("#dayTime");
