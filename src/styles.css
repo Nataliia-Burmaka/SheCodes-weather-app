@@ -76,21 +76,12 @@ body {
   font-size: 60px;
 }
 
-.units .active {
-  color: black;
-  text-decoration: none;
-}
-
-.fahrenheit-link,
-.celsius-link {
-  color: #1687a7;
-  cursor: default;
-}
-
 .units {
+  color: #1687a7;
   position: relative;
   font-size: medium;
-  top: -20px;
+  top: -25px;
+  font-size: 18px;
 }
 
 .icon {
@@ -116,14 +107,19 @@ hr {
   opacity: 0.5 !important;
 }
 
-.day-container div {
-  margin-bottom: 12px;
-  font-size: 18px;
+.forecast-container {
+  margin-top: 20px;
   text-align: center;
 }
-
-.day-container .temp {
+.weather-forecast-date {
   font-size: 24px;
+  color: darkslategray;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+.weather-forecast-temperature {
+  font-size: 16px;
 }
 .myGit {
   text-align: center;
